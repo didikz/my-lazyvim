@@ -1,0 +1,1 @@
+-- Intentional empty: all desired options are LazyVim defaults.

@@ -1,0 +1,1 @@
+-- Intentional empty: LazyVim already defines BufWritePre auto_create_dir (with remote-path guard).

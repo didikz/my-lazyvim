@@ -1,1 +1,1 @@
--- Intentional empty: all desired options are LazyVim defaults.
+vim.opt.linespace = 4

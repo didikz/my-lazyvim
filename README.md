@@ -238,7 +238,7 @@ from `~/.config/zellij/config.kdl`.
 | `<Space>uz` | Toggle zen mode |
 | `<Space>uA` | Toggle tabline |
 
-## Tom's Notes
+## Maintenance
 
 ```bash
 # Format Lua

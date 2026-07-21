@@ -13,10 +13,12 @@ Target languages: PHP, Go, TypeScript/React, and general web stack.
 │   ├── config/
 │   │   ├── lazy.lua             # lazy.nvim options
 │   │   ├── keymaps.lua          # Custom keymaps
-│   │   ├── options.lua          # Empty (LazyVim defaults are fine)
-│   │   └── autocmds.lua         # Empty (LazyVim handles auto-create dir)
+│   │   ├── options.lua          # filetype patterns + icon overrides
+│   │   └── autocmds.lua         # auto-reload buffers changed externally
 │   └── plugins/
-│       ├── colorscheme.lua      # catppuccin-mocha
+│       ├── colorscheme.lua      # sonokai maia
+│       ├── avante.lua           # Cursor ACP integration (<leader>am/ao)
+│       ├── icons.lua            # docker-compose icon override (mini.icons + bufferline)
 │       ├── conform.lua          # Format-on-save per filetype
 │       ├── gitsigns.lua         # Inline git blame, signs
 │       ├── lsp.lua              # LSP server overrides
@@ -70,11 +72,14 @@ All via conform.nvim:
 
 | Plugin | Purpose |
 |---|---|
-| `catppuccin/nvim` | mocha theme |
+| `sainnhe/sonokai` | maia theme |
+| `yetone/avante.nvim` | Cursor ACP integration (model/mode pickers) |
+| `Kaiser-Yang/blink-cmp-avante` | blink.cmp source for Avante |
+| `nvim-mini/mini.icons` | Filetype/file icons (docker-compose override in `icons.lua`) |
 | `stevearc/conform.nvim` | Format-on-save |
 | `lewis6991/gitsigns.nvim` | Inline git blame, hunks, signs |
 | `gbprod/phpactor.nvim` | PHP RPC refactoring (context menu, import, expand) |
-| `NvChad/nvim-colorizer.lua` | Tailwind CSS color preview |
+| `NvChad/nvim-colorizer.lua` | Tailwind color highlighting |
 | `christoomey/vim-tmux-navigator` | Seamless `<C-h/j/k/l>` between tmux panes and nvim splits |
 | LazyVim defaults | blink.cmp, snacks, neo-tree, bufferline, trouble, aerial, which-key, noice, flash, leap, ts-autotag |
 
@@ -96,6 +101,8 @@ All via conform.nvim:
 | `<leader>tao` | Open opencode terminal |
 | `<leader>tal` | Open lazygit terminal |
 | `<leader>gdd` | Git diff this file (Gitsigns) |
+| `<leader>am` | Avante model picker (Cursor ACP) |
+| `<leader>ao` | Avante ACP mode picker |
 | `<leader>pm` | PHP context menu (phpactor) |
 | `<leader>pi` | PHP import class |
 | `<leader>pim` | PHP import missing classes |

@@ -11,9 +11,10 @@ lua/config/            core overrides
   lazy.lua             lazy.nvim setup (lazy=true default, aggressive rtp disable)
   keymaps.lua          custom keymaps
   options.lua          empty (all desired opts are LazyVim defaults)
-  autocmds.lua         empty (LazyVim handles BufWritePre auto-create dir)
+  autocmds.lua         auto-reload buffers changed externally
 lua/plugins/           plugin specs
-  colorscheme.lua      catppuccin-mocha
+  colorscheme.lua      sonokai maia
+  avante.lua           Cursor ACP integration (<leader>am/ao)
   conform.lua          format-on-save per ft
   gitsigns.lua         inline blame + signs
   lsp.lua              LSP server overrides (gopls, tailwindcss, sqls, html, cssls)
@@ -52,7 +53,8 @@ lazyvim.json           enabled LazyVim extras
 
 | Plugin | Why |
 |---|---|
-| catppuccin/nvim | mocha theme |
+| sainnhe/sonokai | maia theme |
+| yetone/avante.nvim | Cursor ACP (model/mode pickers) |
 | gitsigns.nvim | inline blame, hunk signs, diffthis |
 | gbprod/phpactor.nvim | RPC refactor only (LSP off, intelephense serves LSP) |
 | NvChad/nvim-colorizer.lua | Tailwind color highlighting |
@@ -72,6 +74,8 @@ lazyvim.json           enabled LazyVim extras
 | `<leader>tal` | lazygit terminal |
 | `<leader>gdd` | Gitsigns diffthis (gdd avoids snacks picker conflict) |
 | `<leader>pm/pi/pim/pn/pe` | phpactor refactor |
+| `<leader>am` | avante model picker (ACP-aware) |
+| `<leader>ao` | avante ACP mode picker |
 | jk (i) | <Esc> |
 | ; (n) | : |
 

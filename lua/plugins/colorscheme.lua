@@ -1,33 +1,17 @@
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "sainnhe/sonokai",
+    lazy = false,
     priority = 1000,
-    opts = {
-      flavour = "mocha",
-      background = { light = "latte", dark = "mocha" },
-      term_colors = true,
-      integrations = {
-        aerial = true,
-        blink_cmp = { enabled = true, style = "bordered" },
-        cmp = true,
-        dap = true,
-        dap_ui = true,
-        gitsigns = { enabled = true },
-        mason = true,
-        neotree = true,
-        notify = true,
-        snacks = { enabled = true },
-        treesitter_context = true,
-        which_key = true,
-      },
-    },
+    init = function()
+      vim.g.sonokai_style = "maia"
+    end,
   },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-mocha",
+      colorscheme = "sonokai",
     },
   },
 }

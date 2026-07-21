@@ -105,6 +105,132 @@ All via conform.nvim:
 | `;` (normal) | Enter command-line mode |
 | LazyVim defaults | `gd` (goto def), `gr` (refs), `K` (hover), `<leader>ca` (code action), etc. |
 
+## LazyVim Default Keymaps
+
+Quick reference for the most-used LazyVim defaults. Press `<Space>` in
+Neovim to see all bindings via which-key, or check
+<https://www.lazyvim.org/keymaps> for the full list.
+
+### File Explorer (Neo-tree)
+
+| Key | Action |
+|---|---|
+| `<Space>e` | Toggle file tree (root dir) |
+| `<Space>E` | Toggle file tree (cwd) |
+| `<Space>fe` | Open file tree |
+| `<Space>ge` | Git status explorer |
+| `<Space>be` | Buffer explorer |
+| `l` / `h` (in tree) | Open / close node |
+| `Y` (in tree) | Copy path |
+| `O` (in tree) | Open with system app |
+| `<C-l>` (in tree) | Reveal current file |
+
+### Buffers
+
+| Key | Action |
+|---|---|
+| `<Space>bd` | Delete current buffer |
+| `<Space>bo` | Delete other buffers |
+| `<Space>bi` | Delete invisible buffers |
+| `<Space>bD` | Delete buffer and window |
+| `<S-h>` / `<S-l>` | Prev / next buffer |
+| `]b` / `[b` | Prev / next buffer |
+| `<Space>bb` | Switch to other buffer |
+| `<Space>,` | Buffer picker |
+
+### Tabs
+
+| Key | Action |
+|---|---|
+| `<Space><tab>]` | Next tab |
+| `<Space><tab>[` | Previous tab |
+| `<Space><tab>l` | Last tab |
+| `<Space><tab>f` | First tab |
+| `<Space><tab>o` | Close other tabs |
+| `<Space><tab>d` | Close tab |
+| `<Space><tab><tab>` | New tab |
+| `gt` / `gT` | Next / prev tab (built-in) |
+
+### Windows
+
+| Key | Action |
+|---|---|
+| `<C-h>` | Move to left window |
+| `<C-l>` | Move to right window |
+| `<C-j>` | Move to lower window |
+| `<C-k>` | Move to upper window |
+| `<C-w>w` | Cycle windows |
+| `<Space>-` | Split window below |
+| `<Space>\|` | Split window right |
+| `<Space>wd` | Delete window |
+| `<Space>wm` | Toggle zoom |
+
+`<C-h>` is free in Neovim because the Zellij `Ctrl h` bindings were removed
+from `~/.config/zellij/config.kdl`.
+
+### LSP
+
+| Key | Action |
+|---|---|
+| `gd` | Goto definition |
+| `gD` | Goto declaration |
+| `gr` | References |
+| `gy` | Goto type definition |
+| `gI` | Goto implementation |
+| `K` | Hover |
+| `gK` | Signature help |
+| `<Space>ca` | Code action |
+| `<Space>cr` | Rename |
+| `]]` / `[[` | Next / prev reference |
+
+### Search / Picker (Snacks)
+
+| Key | Action |
+|---|---|
+| `<Space><space>` | Find files (root dir) |
+| `<Space>/` | Grep (root dir) |
+| `<Space>ff` | Find files |
+| `<Space>fg` | Find files (git) |
+| `<Space>fb` | Buffers |
+| `<Space>fr` | Recent |
+| `<Space>fp` | Projects |
+| `<Space>fc` | Find config file |
+
+### Diagnostics
+
+| Key | Action |
+|---|---|
+| `<Space>xx` | Diagnostics (Trouble) |
+| `<Space>xX` | Buffer diagnostics |
+| `]d` / `[d` | Next / prev diagnostic |
+| `]e` / `[e` | Next / prev error |
+| `]w` / `[w` | Next / prev warning |
+
+### Git
+
+| Key | Action |
+|---|---|
+| `<Space>gb` | Git blame line |
+| `<Space>gl` | Git log |
+| `<Space>gL` | Git log (cwd) |
+| `<Space>gd` | Git diff (hunks) |
+| `<Space>gD` | Git diff (origin) |
+| `<Space>gs` | Git status |
+
+### UI Toggles
+
+| Key | Action |
+|---|---|
+| `<Space>us` | Toggle spelling |
+| `<Space>uw` | Toggle wrap |
+| `<Space>ul` | Toggle line numbers |
+| `<Space>uL` | Toggle relative number |
+| `<Space>ud` | Toggle diagnostics |
+| `<Space>uh` | Toggle inlay hints |
+| `<Space>ug` | Toggle indent guides |
+| `<Space>uz` | Toggle zen mode |
+| `<Space>uA` | Toggle tabline |
+
 ## Tom's Notes
 
 ```bash

@@ -132,6 +132,16 @@ Neovim to see all bindings via which-key, or check
 | `O` (in tree) | Open with system app |
 | `<C-l>` (in tree) | Reveal current file |
 
+### Creating Files / Folders (Neo-tree)
+
+| Key | Action |
+|---|---|
+| `a` (in tree) | New file — name ending in `/` creates a dir instead |
+| `A` (in tree) | New folder (directory) |
+
+Paths are relative to the highlighted node. Nested paths work and
+intermediate folders are auto-created, e.g. `lua/plugins/foo.lua`.
+
 ### Buffers
 
 | Key | Action |

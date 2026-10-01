@@ -1,3 +1,5 @@
+vim.opt.mouse = "a"
+
 vim.filetype.add {
   pattern = {
     ["docker%-compose.*%.yml"] = "yaml.docker-compose",

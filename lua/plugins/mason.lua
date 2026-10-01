@@ -10,7 +10,6 @@ return {
         "goimports",
         "gofumpt",
         "php-cs-fixer",
-        "sqls",
       })
     end,
   },
